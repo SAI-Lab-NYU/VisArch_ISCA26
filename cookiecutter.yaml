@@ -1,0 +1,75 @@
+repo_directory: html
+name: VisArch
+apply:
+  url: 'https://easychair.org/conferences/?conf=visarch26'
+  title: Submit
+hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
+banner:
+  description: "Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing."
+  start_date: Sunday, March 22, 2026 
+  end_date: ""
+  year: ""
+  location: Pittsburgh, PA, USA
+  main_conference: With ASPLOS 2026
+# Add a button link right under the top (e.g. JupyterBook, url can be local file or https://)
+  links:
+  # - url: intro.html
+  #   title: Event Jupyter Book
+  #   new_window: false
+  image: https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch/main/%7B%7B%20cookiecutter.repo_directory%20%7D%7D/assets/images/banner.jpg
+# The opening session of the event with UTC offset
+event_countdown: "2024-08-07T08:30:00-07:00"
+about:
+  description: VisArch is a Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing.
+  learn_more: https://escience.washington.edu/using-data-science/hackweeks
+  links:
+    - url: '#'
+      title: A sample link
+      new_window: True
+applicant_info: VisArch will take place in March 22, 2026. Applications have not yet opened.
+call_for_papers:
+  title: "Call for Papers"
+  description: "Recent advances in neural rendering and embodied visual intelligence are reshaping AR/VR/XR systems, enabling immersive, interactive, and intelligent experiences across virtual and physical environments. This workshop invites original research contributions that span algorithms, systems, and architectures for neural rendering and AR/VR/XR computing." #\n\nTopics of interest include, but are not limited to:"
+  topics:
+    - "Neural rendering techniques, including Neural Radiance Fields (NeRF), Gaussian Splatting, and learned scene representations."
+    - "Systems and architectures for AR/VR/XR computing platforms."
+    - "Low-latency, low-power pipelines for visual sensing, rendering, and display."
+    - "Hardware acceleration for visual, perception-driven, and neural workloads."
+    - "Sensor fusion and real-time 3D reconstruction from multimodal inputs."
+    - "Distributed, edge, and edge–cloud systems for scalable visual processing."
+    - "Simulation frameworks, benchmarks, and datasets for neural rendering and AR/VR/XR evaluation."
+    - "Applications in robotics, telepresence, and embodied AI, including interactive and collaborative environments."
+  important_dates:
+    - "**Submission Deadline**: February 24, 2026 (Anywhere on Earth)"
+    - "**Author Notification**: February 28, 2026"
+  submission_guidelines:
+    - "Papers must be prepared and submitted as a single file: **no more than 4 pages for the main paper**, with unlimited pages for references, following the **ACM format**."
+    - "Authors should use the **sigplan proceedings template** from the ACM **acmart** LaTeX class, available on the official ACM website: https://www.acm.org/publications/proceedings-template."
+    - "Submissions must be **anonymous** and should not include any author identifying information."
+    - "Both unpublished and previously published works, as well as works in progress, are welcome."
+  additional_info:
+    - "**Proceedings will not be published.**"
+    - "**Contact**: sai.zhang@nyu.edu"
+# Redirect the site to a different domain.
+#redirect:
+#    url: https://go.somehwere.else
+schedule:
+  !include schedule.yaml
+team:
+  !include team.yaml
+  # !include team/team.yaml
+sponsors:
+  description: ''
+  organizations:
+  - name: TBA
+    website: ''
+    logo_url: "" #https://escience.washington.edu/wp-content/uploads/2015/10/Logo_eScience-stacked.png
+footer:
+  social:
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/uwhackweek/
+_copy_without_render:
+- assets
+_extensions:
+- jinja_markdown.MarkdownExtension

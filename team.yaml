@@ -1,0 +1,223 @@
+description:
+  TBA
+  # The people on this page have helped organize the workshop.
+  # You'll find a few specializations listed per person if you're wondering who to reach out to during the event!
+
+# INSTRUCTIONS:
+# - One entry per key must be included per person (title, avatar, role, organizations, bio, expertise, social, user_groups)
+# - user_groups correspond to hackweek roles defined here: https://uwhackweek.github.io/hackweeks-as-a-service/services/index.html
+# - For 'avatar' an easy option is to use the URL for your GitHub user image: https://api.github.com/users/YOUR_GITHUB_USERNAME
+
+people:
+  # - title: TBA
+  #   avatar: TBA
+  #   role: TBA
+  #   organizations:
+  #     - name: TBA
+  #   bio: TBA
+  #   expertise:
+  #     - TBA
+  #   user_groups: TBA
+  - title: Sai Qian Zhang
+    avatar: https://avatars.githubusercontent.com/u/11756442?v=4
+    role: New York University # Research Assistant Professor
+    organizations:
+      - name: New York University
+    bio: Jessica is a glaciologist, remote sensing specialist, open science advocate and educator,
+      collaborative developer, open-source software contributor and maintainer, and community manager.
+      She enjoys weaving her many roles together to work with others to build software that makes it easier
+      for everyone to access and manipulate data, and she's especially fond of detecting icebergs.
+    expertise:
+      - open science
+      - collaborative development
+      - Python
+      - git
+      - GitHub
+      - glaciers
+      - ICESat-2/icepyx
+    social:
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/jessicas11
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/icesat2py
+    user_groups:
+      - Lead Hackweek Organizer
+      - Tutorial Lead
+      - Project Team Lead
+  # =============
+  - title: Yuhao Zhu
+    avatar: https://avatars.githubusercontent.com/u/11756442?v=4
+    role: University of Rochester
+    organizations:
+      - name: University of Rochester
+    bio: Jessica is a glaciologist, remote sensing specialist, open science advocate and educator,
+      collaborative developer, open-source software contributor and maintainer, and community manager.
+      She enjoys weaving her many roles together to work with others to build software that makes it easier
+      for everyone to access and manipulate data, and she's especially fond of detecting icebergs.
+    expertise:
+      - open science
+      - collaborative development
+      - Python
+      - git
+      - GitHub
+      - glaciers
+      - ICESat-2/icepyx
+    social:
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/jessicas11
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/icesat2py
+    user_groups:
+      - Lead Hackweek Organizer
+      - Tutorial Lead
+      - Project Team Lead
+  # =============
+  - title: Yang (Katie) Zhao
+    avatar: https://avatars.githubusercontent.com/u/11756442?v=4
+    role: University of Minnesota, Twin Cities
+    organizations:
+      - name: University of Minnesota, Twin Cities
+    bio: Jessica is a glaciologist, remote sensing specialist, open science advocate and educator,
+      collaborative developer, open-source software contributor and maintainer, and community manager.
+      She enjoys weaving her many roles together to work with others to build software that makes it easier
+      for everyone to access and manipulate data, and she's especially fond of detecting icebergs.
+    expertise:
+      - open science
+      - collaborative development
+      - Python
+      - git
+      - GitHub
+      - glaciers
+      - ICESat-2/icepyx
+    social:
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/jessicas11
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/icesat2py
+    user_groups:
+      - Lead Hackweek Organizer
+      - Tutorial Lead
+      - Project Team Lead
+  # =============
+  - title: Nandita Vijaykumar
+    avatar: https://avatars.githubusercontent.com/u/11756442?v=4
+    role: University of Toronto
+    organizations:
+      - name: University of Toronto
+    bio: Jessica is a glaciologist, remote sensing specialist, open science advocate and educator,
+      collaborative developer, open-source software contributor and maintainer, and community manager.
+      She enjoys weaving her many roles together to work with others to build software that makes it easier
+      for everyone to access and manipulate data, and she's especially fond of detecting icebergs.
+    expertise:
+      - open science
+      - collaborative development
+      - Python
+      - git
+      - GitHub
+      - glaciers
+      - ICESat-2/icepyx
+    social:
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/jessicas11
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/icesat2py
+    user_groups:
+      - Lead Hackweek Organizer
+      - Tutorial Lead
+      - Project Team Lead
+  # =============
+  - title: Sushant Kondguli
+    avatar: https://avatars.githubusercontent.com/u/11756442?v=4
+    role: Meta
+    organizations:
+      - name: Meta
+    bio: Jessica is a glaciologist, remote sensing specialist, open science advocate and educator,
+      collaborative developer, open-source software contributor and maintainer, and community manager.
+      She enjoys weaving her many roles together to work with others to build software that makes it easier
+      for everyone to access and manipulate data, and she's especially fond of detecting icebergs.
+    expertise:
+      - open science
+      - collaborative development
+      - Python
+      - git
+      - GitHub
+      - glaciers
+      - ICESat-2/icepyx
+    social:
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/jessicas11
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/icesat2py
+    user_groups:
+      - Lead Hackweek Organizer
+      - Tutorial Lead
+      - Project Team Lead
+  # =============
+  - title: Jaewoong Sim 
+    avatar: https://avatars.githubusercontent.com/u/11756442?v=4
+    role: Seoul National University
+    organizations:
+      - name: Seoul National University
+    bio: Jessica is a glaciologist, remote sensing specialist, open science advocate and educator,
+      collaborative developer, open-source software contributor and maintainer, and community manager.
+      She enjoys weaving her many roles together to work with others to build software that makes it easier
+      for everyone to access and manipulate data, and she's especially fond of detecting icebergs.
+    expertise:
+      - open science
+      - collaborative development
+      - Python
+      - git
+      - GitHub
+      - glaciers
+      - ICESat-2/icepyx
+    social:
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/jessicas11
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/icesat2py
+    user_groups:
+      - Lead Hackweek Organizer
+      - Tutorial Lead
+      - Project Team Lead
+  # =============
+  - title: Haiyu Wang
+    avatar: https://avatars.githubusercontent.com/u/11756442?v=4
+    role: New York University
+    organizations:
+      - name: New York University
+    bio: Jessica is a glaciologist, remote sensing specialist, open science advocate and educator,
+      collaborative developer, open-source software contributor and maintainer, and community manager.
+      She enjoys weaving her many roles together to work with others to build software that makes it easier
+      for everyone to access and manipulate data, and she's especially fond of detecting icebergs.
+    expertise:
+      - open science
+      - collaborative development
+      - Python
+      - git
+      - GitHub
+      - glaciers
+      - ICESat-2/icepyx
+    social:
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/jessicas11
+      - icon: github
+        icon_pack: fab
+        link: https://github.com/icesat2py
+    user_groups:
+      - Lead Hackweek Organizer
+      - Tutorial Lead
+      - Project Team Lead
+  # =============
