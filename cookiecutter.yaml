@@ -16,7 +16,7 @@ banner:
   # - url: intro.html
   #   title: Event Jupyter Book
   #   new_window: false 
-  image: https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch_ISCA26/main/%7B%7B%20cookiecutter.repo_directory%20%7D%7D/assets/images/banner.jpg
+  image: https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch_ISCA26/main/%7B%7B%20cookiecutter.repo_directory%20%7D%7D/assets/images/raleigh-skyline-banner.webp
 # The opening session of the event with UTC offset
 event_countdown: "2026-06-27T08:30:00-04:00"
 about:
