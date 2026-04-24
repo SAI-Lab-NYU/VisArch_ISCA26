@@ -134,40 +134,11 @@ people:
       - Tutorial Lead
       - Project Team Lead
   # =============
-  - title: Sushant Kondguli
+  - title: Zishen Wan
     avatar: https://avatars.githubusercontent.com/u/11756442?v=4
-    role: Meta
+    role: Harvard University
     organizations:
-      - name: Meta
-    bio: Jessica is a glaciologist, remote sensing specialist, open science advocate and educator,
-      collaborative developer, open-source software contributor and maintainer, and community manager.
-      She enjoys weaving her many roles together to work with others to build software that makes it easier
-      for everyone to access and manipulate data, and she's especially fond of detecting icebergs.
-    expertise:
-      - open science
-      - collaborative development
-      - Python
-      - git
-      - GitHub
-      - glaciers
-      - ICESat-2/icepyx
-    social:
-      - icon: github
-        icon_pack: fab
-        link: https://github.com/jessicas11
-      - icon: github
-        icon_pack: fab
-        link: https://github.com/icesat2py
-    user_groups:
-      - Lead Hackweek Organizer
-      - Tutorial Lead
-      - Project Team Lead
-  # =============
-  - title: Jaewoong Sim 
-    avatar: https://avatars.githubusercontent.com/u/11756442?v=4
-    role: Seoul National University
-    organizations:
-      - name: Seoul National University
+      - name: Harvard University
     bio: Jessica is a glaciologist, remote sensing specialist, open science advocate and educator,
       collaborative developer, open-source software contributor and maintainer, and community manager.
       She enjoys weaving her many roles together to work with others to build software that makes it easier

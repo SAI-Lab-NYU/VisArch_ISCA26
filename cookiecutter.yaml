@@ -33,12 +33,11 @@ call_for_papers:
   topics:
     - "Neural rendering techniques, including Neural Radiance Fields (NeRF), Gaussian Splatting, and learned scene representations."
     - "Systems and architectures for AR/VR/XR computing platforms."
+    - "Systems and architectures for robotics and embodied AI."
     - "Low-latency, low-power pipelines for visual sensing, rendering, and display."
     - "Hardware acceleration for visual, perception-driven, and neural workloads."
     - "Sensor fusion and real-time 3D reconstruction from multimodal inputs."
     - "Distributed, edge, and edge–cloud systems for scalable visual processing."
-    - "Simulation frameworks, benchmarks, and datasets for neural rendering and AR/VR/XR evaluation."
-    - "Applications in robotics, telepresence, and embodied AI, including interactive and collaborative environments."
   important_dates:
     - "**Submission Deadline**: May 29, 2026 (Anywhere on Earth)"
     - "**Author Notification**: June 1, 2026"
