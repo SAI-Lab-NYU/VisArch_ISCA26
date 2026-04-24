@@ -1,12 +1,12 @@
 repo_directory: html
-name: Workshop on Systems and Architectures for Visual Computing, AR/VR, and Embodied Intelligence
+name: VisArch
 apply:
   url: 'https://easychair.org/conferences/?conf=visarch_isca26'
   title: Submit
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
   description: "Workshop on Systems and Architectures for Visual Computing, AR/VR, and Embodied Intelligence."
-  start_date: Saturday, June 27, 2026 (周六)
+  start_date: Saturday, June 27, 2026
   end_date: ""
   year: ""
   location: Raleigh, NC, USA
@@ -26,7 +26,7 @@ about:
     - url: '#'
       title: A sample link
       new_window: True
-applicant_info: VisArch will take place on Saturday, June 27, 2026 (6.27 周六). Applications have not yet opened.
+applicant_info: VisArch will take place on Saturday, June 27, 2026. Applications have not yet opened.
 call_for_papers:
   title: "Call for Papers"
   description: "Recent advances in neural rendering and embodied visual intelligence are reshaping AR/VR/XR systems, enabling immersive, interactive, and intelligent experiences across virtual and physical environments. This workshop invites original research contributions that span algorithms, systems, and architectures for neural rendering and AR/VR/XR computing." #\n\nTopics of interest include, but are not limited to:"
