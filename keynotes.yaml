@@ -1,0 +1,15 @@
+intro: "Keynote talks at VisArch."
+keynotes: []
+
+# Example entries (uncomment and fill when speakers are confirmed):
+# keynotes:
+#   - id: 1
+#     title: "Talk title TBA"
+#     speaker: "Speaker Name"
+#     speaker_url: "https://example.com"
+#     speaker_title: "Affiliation"
+#     photo: ""
+#     bio: |-
+#       Speaker bio TBA.
+#     abstract: |-
+#       Abstract TBA.

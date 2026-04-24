@@ -1,12 +1,12 @@
 repo_directory: html
-name: VisArch ISCA'26
+name: Workshop on Systems and Architectures for Visual Computing, AR/VR, and Embodied Intelligence
 apply:
   url: 'https://easychair.org/conferences/?conf=visarch_isca26'
   title: Submit
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
-  description: "Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing."
-  start_date: Sunday, June 28, 2026 
+  description: "Workshop on Systems and Architectures for Visual Computing, AR/VR, and Embodied Intelligence."
+  start_date: Saturday, June 27, 2026 (周六)
   end_date: ""
   year: ""
   location: Raleigh, NC, USA
@@ -18,15 +18,15 @@ banner:
   #   new_window: false 
   image: https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch_ISCA26/main/%7B%7B%20cookiecutter.repo_directory%20%7D%7D/assets/images/banner.jpg
 # The opening session of the event with UTC offset
-event_countdown: "2024-08-07T08:30:00-07:00"
+event_countdown: "2026-06-27T08:30:00-04:00"
 about:
-  description: VisArch is a Workshop on Systems and Architectures for Neural Rendering, AR/VR, and Visual Computing.
+  description: VisArch is a Workshop on Systems and Architectures for Visual Computing, AR/VR, and Embodied Intelligence.
   learn_more: https://escience.washington.edu/using-data-science/hackweeks
   links:
     - url: '#'
       title: A sample link
       new_window: True
-applicant_info: VisArch will take place in June 28, 2026. Applications have not yet opened.
+applicant_info: VisArch will take place on Saturday, June 27, 2026 (6.27 周六). Applications have not yet opened.
 call_for_papers:
   title: "Call for Papers"
   description: "Recent advances in neural rendering and embodied visual intelligence are reshaping AR/VR/XR systems, enabling immersive, interactive, and intelligent experiences across virtual and physical environments. This workshop invites original research contributions that span algorithms, systems, and architectures for neural rendering and AR/VR/XR computing." #\n\nTopics of interest include, but are not limited to:"
@@ -40,8 +40,8 @@ call_for_papers:
     - "Simulation frameworks, benchmarks, and datasets for neural rendering and AR/VR/XR evaluation."
     - "Applications in robotics, telepresence, and embodied AI, including interactive and collaborative environments."
   important_dates:
-    - "**Submission Deadline**: TBA, 2026 (Anywhere on Earth)"
-    - "**Author Notification**: TBA, 2026"
+    - "**Submission Deadline**: May 29, 2026 (Anywhere on Earth)"
+    - "**Author Notification**: June 1, 2026"
   submission_guidelines:
     - "Papers must be prepared and submitted as a single file: **no more than 4 pages for the main paper**, with unlimited pages for references, following the **ACM format**."
     - "Authors should use the **sigplan proceedings template** from the ACM **acmart** LaTeX class, available on the official ACM website: https://www.acm.org/publications/proceedings-template."
@@ -55,6 +55,12 @@ call_for_papers:
 #    url: https://go.somehwere.else
 schedule:
   !include schedule.yaml
+keynotes:
+  !include keynotes.yaml
+accepted_papers:
+  !include accepted_papers.yaml
+gallery:
+  !include gallery.yaml
 team:
   !include team.yaml
   # !include team/team.yaml

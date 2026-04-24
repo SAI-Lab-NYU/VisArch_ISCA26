@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ cookiecutter.banner.description }}">
     <meta name="author" content="{{ cookiecutter.name }}">
-    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.png"> -->
 
     <!-- Google Font -->
     <link
@@ -33,6 +33,76 @@
             background: url("{{cookiecutter.banner['image']}}") no-repeat center center;
             background-size: cover;
         }
+        .paper-title-link:hover,
+        .speaker-link:hover {
+            text-decoration: underline !important;
+        }
+
+        /* Dark backdrop only behind the image, not the caption */
+        #gallery .gallery-slide-media {
+            background-color: #1a1a1a;
+        }
+
+        #gallery .carousel-item img {
+            max-height: 75vh;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        /* Caption / indicators / arrows sit below the image, not overlaid */
+        #workshopPhotoCarousel {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #workshopPhotoCarousel .carousel-inner {
+            order: 0;
+        }
+
+        #gallery .gallery-caption-below {
+            background: transparent;
+            color: #333;
+            padding: 0.65rem 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        #workshopPhotoCarousel .carousel-indicators {
+            position: static;
+            order: 1;
+            margin: 0.75rem 0 0;
+            justify-content: center;
+        }
+
+        #workshopPhotoCarousel .carousel-indicators button {
+            width: 0.65rem;
+            height: 0.65rem;
+            border-radius: 50%;
+        }
+
+        #workshopPhotoCarousel .gallery-carousel-nav {
+            order: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 0.35rem;
+            padding-bottom: 0.25rem;
+        }
+
+        #workshopPhotoCarousel .carousel-control-prev,
+        #workshopPhotoCarousel .carousel-control-next {
+            position: static;
+            width: auto;
+            height: auto;
+            padding: 0.35rem 0.75rem;
+            opacity: 1;
+        }
+
+        #workshopPhotoCarousel .carousel-control-prev-icon,
+        #workshopPhotoCarousel .carousel-control-next-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     </style>
 </head>
 
@@ -44,7 +114,7 @@
                 <div class="site-logo">
                     <a class="scrollto" href="#hero-block">
                         <span class="logo-icon-text">
-                            VisArch
+                            VisArch-2nd
                         </span>
                     </a>
                 </div>
@@ -87,6 +157,23 @@
                                 Schedule
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#keynotes">
+                                Keynote Speakers
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#accepted-papers">
+                                Accepted Papers
+                            </a>
+                        </li>
+                        {%- if cookiecutter.gallery and cookiecutter.gallery.photos and cookiecutter.gallery.photos|length > 0 %}
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#gallery">
+                                Photos
+                            </a>
+                        </li>
+                        {%- endif %}
                         <li class="nav-item">
                             <a class="nav-link scrollto" href="#team">
                                 Team
@@ -154,68 +241,19 @@
 </div>
 <!--//hero-block-->
 
-<!-- <section id="about-section" class="about-section section theme-bg-light"> -->
-    <!-- <div class="container">
+<section id="about" class="about-section section theme-bg-light">
+    <div class="container">
         <h3 class="section-heading text-center mb-3">
-            About {{ cookiecutter.name }}
+            About VisArch
         </h3>
         <div class="section-intro single-col-max mx-auto mb-3">
             {{ cookiecutter.about.description }}
-        </div> -->
-        <!-- <div class="about-cta text-center mb-4">
-            <a class="btn btn-secondary btn-lg"
-               href="{{ cookiecutter.about.learn_more }}"
-               target="_blank">
-                Learn about "VisArch"
-                <i class="fas fa-external-link-alt"></i>
-            </a>
-        </div> -->
-
-        <!-- {%- if 'links' in cookiecutter.about %}
-            <div class="hero-cta text-center mb-4">
-                <h4 class="mb-3 text-center">
-                    Past Events:
-                </h4>
-                {%- for link in cookiecutter.about.links %}
-                    <a class="btn btn-primary btn-lg mb-3 mx-2"
-                       href="{{ link.url }}"
-                        {{ 'target="_blank"' if link.new_window == 'True' else '' }}
-                    >
-                        {{ link.title }}
-                    </a>
-                {%- endfor %}
-            </div>
-        {%- endif %} -->
-
-        <!-- <div id="countdown-intro" class="event-countdown text-center mb-4">
-            <h4 class="countdown-intro mb-2 text-center">
-                {{ cookiecutter.banner.year }} Event Starts In:
-            </h4>
-            <div id="countdown-box"
-                 class="countdown-box"
-                 data-start-date="{{ cookiecutter.event_countdown }}">
-                {% for unit in ['days', 'hours', 'minutes', 'seconds'] %}
-                <span class="{{ unit }}">
-                    <span class="number"></span>
-                    <span class="unit">{{ unit.capitalize() }}</span>
-                </span>
-                {% endfor %}
-            </div>
         </div>
-    </div> -->
-
-    <!-- <div class="media-block theme-bg-primary py-5">
-        <div class="container">
-            <h4 class="text-white text-center mb-3">
-                Information for Applicants
-            </h4>
-            <div
-                class="section-intro text-center single-col-max mx-auto text-white mb-3">
-                {{cookiecutter.applicant_info}}
-            </div>
+        <div class="section-intro single-col-max mx-auto text-muted">
+            {{ cookiecutter.applicant_info }}
         </div>
-    </div> -->
-<!-- </section> -->
+    </div>
+</section>
 
 <section id="cfp" class="cfp section theme-bg-light">
   <div class="container">
@@ -347,9 +385,22 @@
                     </div>
 
                     <div class="content">
-                        <h3 class="title mb-3">
+                        <h3 class="title mb-1">
                             {{ content['title'] }}
                         </h3>
+
+                        {% if content.get('talk_title') %}
+                        <h4 class="mb-2">
+                            {% if content.get('keynote_id') %}
+                            <a href="#keynote-{{ content['keynote_id'] }}"
+                               class="paper-title-link text-decoration-none">
+                                {{ content['talk_title'] }}
+                            </a>
+                            {% else %}
+                            {{ content['talk_title'] }}
+                            {% endif %}
+                        </h4>
+                        {% endif %}
 
                         {% if 'location' in content %}
                         <div class="location mb-3"><i
@@ -358,35 +409,28 @@
                         </div>
                         {% endif %}
 
+                        {% if 'speaker' in content %}
+                        <div class="mb-1 h5" style="font-weight: 600;">
+                            {%- if content.get('speaker_url') %}
+                            <a href="{{ content['speaker_url'] }}" target="_blank" rel="noopener" class="speaker-link text-decoration-none">{{ content['speaker'] }}</a>
+                            {%- else %}
+                            {{ content['speaker'] }}
+                            {%- endif %}
+                        </div>
+                        {% if 'speaker_title' in content %}
+                        <div class="mb-2 text-muted">
+                            {{ content['speaker_title'] }}
+                        </div>
+                        {% endif %}
+                        {% endif %}
+
                         <div class="desc">
-                            {% if 'description' in content and content['description'] is not none %}
+                            {% if 'abstract' in content and content['abstract'] is not none and not content.get('keynote_id') %}
                             {%- markdown -%}
-                            {{ content['description']|safe }}
+                            {{ content['abstract']|safe }}
                             {%- endmarkdown -%}
                             {%- endif %}
                         </div>
-                        {%- if 'leads' in content and content['leads']|length > 0 %}
-                        <div class="profile">
-                            <h6 class="mb-1 mt-2"> Lead(s)</h6>
-                            {%- for lead in content['leads'] %}
-                            {%- set person = cookiecutter.team['people']|selectattr('title', '==', lead)|list %}
-                            {%- if person|length > 0 %}
-                            {%- set modal_name = person[0]['title']|lower|replace(' ', '--') %}
-                            {%- set modal_key = '{}-modal'.format(modal_name) %}
-                            <div class="name">
-                                <a class="theme-link"
-                                   href="#{{modal_key}}"
-                                   data-bs-toggle="modal"
-                                   data-bs-target="#{{modal_key}}">
-                                    {{ lead }}
-                                </a>
-                            </div>
-                            {%- else %}
-                            <div class="name">{{ lead }}</div>
-                            {%- endif %}
-                            {%- endfor %}
-                        </div>
-                        {%- endif %}
                         {%- if 'resources' in content and content['resources'] is not none %}
                         <div>
                             <h6 class="mb-1 mt-2"> Resource(s)</h6>
@@ -418,6 +462,186 @@
 </section>
 <!--//schedule-section-->
 {% endif %}
+
+{% if cookiecutter.keynotes %}
+<section id="keynotes" class="section theme-bg-light">
+    <div class="container">
+        <h3 class="section-heading text-center mb-4">Keynote Speakers</h3>
+        {%- if cookiecutter.keynotes.keynotes and cookiecutter.keynotes.keynotes|length > 0 %}
+        <div class="row justify-content-center">
+            {%- for keynote in cookiecutter.keynotes.keynotes %}
+            <div class="col-md-10 col-lg-8 mb-5" id="keynote-{{ keynote.id }}">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="row g-0 align-items-center">
+                            <div class="{% if keynote.photo %}col-md-9{% else %}col-12{% endif %}">
+                                <h4 class="card-title mb-2">
+                                    {{ keynote.title }}
+                                </h4>
+                                {%- if keynote.speaker %}
+                                <h5 class="mb-1" style="font-weight: 600;">
+                                    {%- if keynote.speaker_url %}
+                                    <a href="{{ keynote.speaker_url }}"
+                                       target="_blank"
+                                       rel="noopener"
+                                       class="speaker-link text-decoration-none">
+                                        {{ keynote.speaker }}
+                                    </a>
+                                    {%- else %}
+                                    {{ keynote.speaker }}
+                                    {%- endif %}
+                                </h5>
+                                {%- endif %}
+                                {%- if keynote.speaker_title %}
+                                <div class="text-muted mb-0">
+                                    {{ keynote.speaker_title }}
+                                </div>
+                                {%- endif %}
+                            </div>
+                            {%- if keynote.photo %}
+                            <div class="col-md-3 text-md-center mt-3 mt-md-0">
+                                <img src="{{ keynote.photo }}"
+                                     class="img-fluid"
+                                     style="max-width: 160px;"
+                                     alt="{{ keynote.speaker }}">
+                            </div>
+                            {%- endif %}
+                        </div>
+
+                        {%- if keynote.bio or keynote.abstract %}
+                        <div class="mt-4">
+                            {%- if keynote.bio %}
+                            <div class="mb-3">
+                                <strong>Bio.</strong>
+                                <div class="mt-1">
+                                    {%- markdown -%}
+                                    {{ keynote.bio|safe }}
+                                    {%- endmarkdown -%}
+                                </div>
+                            </div>
+                            {%- endif %}
+
+                            {%- if keynote.abstract %}
+                            <div>
+                                <strong>Abstract.</strong>
+                                <div class="mt-1">
+                                    {%- markdown -%}
+                                    {{ keynote.abstract|safe }}
+                                    {%- endmarkdown -%}
+                                </div>
+                            </div>
+                            {%- endif %}
+                        </div>
+                        {%- endif %}
+                    </div>
+                </div>
+            </div>
+            {%- endfor %}
+        </div>
+        {%- else %}
+        <p class="text-center text-muted">Keynote speakers will be announced soon.</p>
+        {%- endif %}
+    </div>
+</section>
+{% endif %}
+
+<section id="accepted-papers" class="accepted-papers section theme-bg-light">
+    <div class="container">
+        <h3 class="section-heading text-center mb-3">Accepted Papers</h3>
+        {%- if cookiecutter.accepted_papers and cookiecutter.accepted_papers.papers|length > 0 %}
+        <div class="section-intro text-center single-col-max mx-auto mb-4">
+            {%- if cookiecutter.accepted_papers.intro %}
+            {{ cookiecutter.accepted_papers.intro }}
+            {%- endif %}
+        </div>
+        <div class="single-col-max mx-auto">
+            <ul class="list-unstyled">
+                {%- for paper in cookiecutter.accepted_papers.papers %}
+                <li class="mb-4">
+                    {%- if paper.pdf %}
+                    <strong><a href="{{ paper.pdf }}" target="_blank" rel="noopener" class="paper-title-link text-decoration-none">{{ paper.title }}</a></strong>
+                    {%- else %}
+                    <strong>{{ paper.title }}</strong>
+                    {%- endif %}
+                    {%- if paper.authors %}
+                    <br><span class="text-muted">{{ paper.authors }}</span>
+                    {%- endif %}
+                </li>
+                {%- endfor %}
+            </ul>
+        </div>
+        {%- else %}
+        <p class="text-center text-muted">Accepted papers will be listed here after the notification deadline.</p>
+        {%- endif %}
+    </div>
+</section>
+
+{%- if cookiecutter.gallery and cookiecutter.gallery.photos and cookiecutter.gallery.photos|length > 0 %}
+<section id="gallery" class="gallery-section section theme-bg-light">
+    <div class="container">
+        <h3 class="section-heading text-center mb-3">
+            {{ cookiecutter.gallery.title or 'Workshop Photos' }}
+        </h3>
+        {%- if cookiecutter.gallery.intro %}
+        <div class="section-intro text-center single-col-max mx-auto mb-4">
+            {{ cookiecutter.gallery.intro }}
+        </div>
+        {%- endif %}
+        <div class="single-col-max mx-auto">
+            <div id="workshopPhotoCarousel"
+                 class="carousel slide carousel-dark"
+                 data-bs-ride="carousel"
+                 data-bs-interval="5000"
+                 data-bs-keyboard="true"
+                 data-bs-touch="true">
+                <div class="carousel-inner rounded">
+                    {%- for photo in cookiecutter.gallery.photos %}
+                    <div class="carousel-item{% if loop.first %} active{% endif %}">
+                        <div class="gallery-slide-media">
+                            <img src="{{ photo.src }}"
+                                 class="d-block w-100"
+                                 alt="{{ photo.alt or 'Workshop photo' }}"
+                                 loading="lazy">
+                        </div>
+                        {%- if photo.caption %}
+                        <div class="gallery-caption-below text-center">
+                            <p class="mb-0">{{ photo.caption }}</p>
+                        </div>
+                        {%- endif %}
+                    </div>
+                    {%- endfor %}
+                </div>
+                <div class="carousel-indicators">
+                    {%- for photo in cookiecutter.gallery.photos %}
+                    <button type="button"
+                            data-bs-target="#workshopPhotoCarousel"
+                            data-bs-slide-to="{{ loop.index0 }}"
+                            {%- if loop.first %}
+                            class="active"
+                            aria-current="true"
+                            {%- endif %}
+                            aria-label="Slide {{ loop.index }}"></button>
+                    {%- endfor %}
+                </div>
+                <div class="gallery-carousel-nav">
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#workshopPhotoCarousel"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#workshopPhotoCarousel"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{%- endif %}
 
 <div class="container">
     <hr>
