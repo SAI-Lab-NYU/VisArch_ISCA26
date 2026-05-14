@@ -1,7 +1,7 @@
 repo_directory: html
 name: VisArch-2nd
 apply:
-  url: 'https://easychair.org/conferences/?conf=visarch_isca26'
+  url: 'https://easychair.org/conferences/?conf=visarch2nd'
   title: Submit
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
