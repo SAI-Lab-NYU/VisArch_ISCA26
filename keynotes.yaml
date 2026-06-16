@@ -1,14 +1,33 @@
 intro: "Keynote talks at VisArch."
-keynotes: []
+keynotes:
+  - id: 1
+    title: "Intelligent and Secure XR: Building Adaptive Spatial Systems That Know When They Are Wrong"
+    speaker: "Maria Gorlatova"
+    speaker_url: "https://maria.gorlatova.com/bio/"
+    speaker_title: "Sternberg Family Associate Professor of Electrical and Computer Engineering at Duke University"
+    photo: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch_ISCA26/main/assets/images/keynotes/MGorlatova_Photo.jpg"
+    bio: |-
+      Dr. Maria Gorlatova is the Sternberg Family Associate Professor of Electrical and Computer Engineering at Duke University. Her research centers on pervasive and immersive computing systems, with a focus on spatial computing, next-generation augmented reality, edge-assisted XR, and human-centered AI for real-time interactive environments. Prior to joining Duke, she received her Ph.D. in Electrical Engineering from Columbia University and spent two years at Princeton University as an Associate Research Scholar and Associate Director of the Princeton EDGE Lab. Dr. Gorlatova is the recipient of multiple awards, including the NSF CAREER Award, the DARPA Young Faculty Award, the DARPA Director's Fellowship, the IEEE ISMAR 2025 Best Paper Award, and the IEEE Communications Society Award for Advances in Communications. She served as TPC Co-chair of ACM/IEEE SenSys 2025 and is currently serving as General Chair of ACM HotMobile 2027.
+    abstract: |-
+      Immersive computing is moving beyond basic overlays into complex, real-world deployments. In this talk, I will highlight several cutting-edge XR applications developed in our lab, including solutions for healthcare and human-robot interaction, that rely on tight integration with edge computing and advanced sensing pipelines. As these systems become more capable, ensuring their safety and reliability becomes a critical bottleneck.
 
-# Example entries (uncomment and fill when speakers are confirmed):
-# keynotes:
-#   - id: 1
+      When deployed in unconstrained environments, mixed reality experiences can fail in subtle but consequential ways. Virtual objects may drift or occlude critical real-world elements; spatial audio cues may contradict visual content; and MR-based guidance may suggest actions that are impossible or unsafe. These failures are highly context-dependent: content that is useful in one environment can be unsafe in another. They therefore cannot be detected by classical signal processing or conventional ML approaches alone.
+
+      Recent large multimodal models (LMMs) provide a new mechanism for monitoring immersive systems. By jointly reasoning over video streams captured by MR devices, rendered virtual content, spatial audio, and scene context, these models have the potential to identify misaligned overlays, unsafe occlusions, inconsistent audio-visual cues, and policy violations in MR applications. In this talk, I will present an LMM-based MR evaluation pipeline that uses LMMs together with auxiliary ML models to analyze continuous multimodal streams and trigger corrective actions when problematic virtual content is detected. A key challenge in LMM-based XR evaluation is reducing inference latency to support near real-time operation. I present a collection of system design choices and lay out a research agenda with the potential to bring down the cost and latency of these systems.
+
+# Add speaker photos under:
+#   assets/images/keynotes/
+#
+# Then use raw GitHub URLs in the photo field, for example:
+#   https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch_ISCA26/main/assets/images/keynotes/speaker-name.jpg
+#
+# Add future speakers as additional entries under `keynotes`, for example:
+#   - id: 2
 #     title: "Talk title TBA"
 #     speaker: "Speaker Name"
 #     speaker_url: "https://example.com"
 #     speaker_title: "Affiliation"
-#     photo: ""
+#     photo: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch_ISCA26/main/assets/images/keynotes/speaker-name.jpg"
 #     bio: |-
 #       Speaker bio TBA.
 #     abstract: |-

@@ -161,11 +161,13 @@
                                 Schedule
                             </a>
                         </li>
+                        {%- if cookiecutter.keynotes and cookiecutter.keynotes.keynotes|length > 0 %}
                         <li class="nav-item">
                             <a class="nav-link scrollto" href="#keynotes">
                                 Keynote Speakers
                             </a>
                         </li>
+                        {%- endif %}
                         <li class="nav-item">
                             <a class="nav-link scrollto" href="#accepted-papers">
                                 Accepted Papers
@@ -453,11 +455,10 @@
 <!--//schedule-section-->
 {% endif %}
 
-{% if cookiecutter.keynotes %}
+{% if cookiecutter.keynotes and cookiecutter.keynotes.keynotes|length > 0 %}
 <section id="keynotes" class="section theme-bg-light">
     <div class="container">
         <h3 class="section-heading text-center mb-4">Keynote Speakers</h3>
-        {%- if cookiecutter.keynotes.keynotes and cookiecutter.keynotes.keynotes|length > 0 %}
         <div class="row justify-content-center">
             {%- for keynote in cookiecutter.keynotes.keynotes %}
             <div class="col-md-10 col-lg-8 mb-5" id="keynote-{{ keynote.id }}">
@@ -528,9 +529,6 @@
             </div>
             {%- endfor %}
         </div>
-        {%- else %}
-        <p class="text-center text-muted">Keynote speakers will be announced soon.</p>
-        {%- endif %}
     </div>
 </section>
 {% endif %}
