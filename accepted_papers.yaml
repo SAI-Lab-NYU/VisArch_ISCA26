@@ -1,5 +1,20 @@
-intro: "Accepted papers will be listed here after the notification deadline."
-papers: []
+intro: "The following papers have been accepted for presentation at the workshop."
+papers:
+  - title: "Bootstrap Discovery of Sensory Primitives for Embodied Visual Learning"
+    authors: "Jerry Felix"
+    pdf: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch_ISCA26/main/papers/VisArch_2026%20-%20Bootstrap%20Discovery%20-%20camera%20ready.pdf"
+
+  - title: "Exploring the Performance Implications of Collision Geometry Representations in Robot Motion Control"
+    authors: "Fallon McBrien, Radhika Ghosal and Sabrina M. Neuman"
+    pdf: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch_ISCA26/main/papers/VisArch_ISCA_2026__Collision_Geometry__Camera_ready.pdf"
+
+  - title: "Chunk-Level Routing for Vision-Language-Action Models"
+    authors: "Tian Xie, Youngjin Hong, Zishen Wan and Yang (Katie) Zhao"
+    pdf: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch_ISCA26/main/papers/isca_workshop%20%281%29.pdf"
+
+  - title: "InvisibleHand: Adversarial Attack Against Embodied AI Execution in Wearable AR System"
+    authors: "Jiajing Zheng, Tianhua Xia and Sai Qian Zhang"
+    pdf: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch_ISCA26/main/papers/VisArch_2nd_Long_Video_Security.pdf"
 
 # Example entries (uncomment and fill when papers are accepted):
 # papers:
