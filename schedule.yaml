@@ -3,9 +3,27 @@ tabs:
 - title: VisArch
   date: Saturday, June 27
   contents:
-  - title: TBA
-    abstract: Schedule details will be announced soon.
-    time: 8:30-12:00
+  - title: "Welcome Remarks & Coffee Break"
+    time: 9:00 - 9:10
+
+  - title: "Invited Talk 1"
+    keynote_id: 1
+    talk_title: "Intelligent and Secure XR: Building Adaptive Spatial Systems That Know When They Are Wrong"
+    time: 9:10 - 10:00
+    speaker: Maria Gorlatova
+    speaker_url: "https://maria.gorlatova.com/bio/"
+    speaker_title: Sternberg Family Associate Professor of Electrical and Computer Engineering at Duke University
+
+  - title: "Welcome Remarks & Coffee Break"
+    time: 10:00 - 10:15
+
+  - title: "Invited Talk 2"
+    talk_title: "TBD"
+    time: 10:15 - 11:00
+    speaker: 'Yingyan "Celine" Lin'
+
+  - title: "Poster/Demo Session"
+    time: 11:00 - 12:00
 #   - title: Coffee
 #     description: Blank.
 #     time: 8:30 - 8:50
