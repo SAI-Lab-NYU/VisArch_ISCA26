@@ -3,19 +3,19 @@ tabs:
 - title: VisArch
   date: Saturday, June 27
   contents:
-  - title: "Welcome Remarks & Coffee Break"
+  - title: "Welcome Remarks"
     time: 9:00 - 9:10
 
   - title: "Invited Talk 1"
     keynote_id: 1
     talk_title: "Intelligent and Secure XR: Building Adaptive Spatial Systems That Know When They Are Wrong"
-    time: 9:10 - 10:00
+    time: 9:10 - 9:55
     speaker: Maria Gorlatova
     speaker_url: "https://maria.gorlatova.com/bio/"
     speaker_title: Sternberg Family Associate Professor of Electrical and Computer Engineering at Duke University
 
-  - title: "Welcome Remarks & Coffee Break"
-    time: 10:00 - 10:15
+  - title: "Coffee Break"
+    time: 9:55 - 10:15
 
   - title: "Invited Talk 2"
     talk_title: "TBD"

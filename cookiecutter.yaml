@@ -5,7 +5,7 @@ apply:
   title: Submit
 hackweek_mission: https://uwhackweek.github.io/hackweeks-as-a-service/mission.html
 banner:
-  description: "Workshop on Systems and Architectures for Visual Computing, AR/VR, and Embodied Intelligence."
+  description: "Workshop on Systems and Architectures for Visual Computing, AR/VR, and Embodied Intelligence"
   start_date: Saturday, June 27, 2026
   end_date: ""
   year: ""
@@ -34,10 +34,8 @@ call_for_papers:
     - "Neural rendering techniques, including Neural Radiance Fields (NeRF), Gaussian Splatting, and learned scene representations."
     - "Systems and architectures for AR/VR/XR computing platforms."
     - "Systems and architectures for robotics and embodied AI."
-    - "Low-latency, low-power pipelines for visual sensing, rendering, and display."
-    - "Hardware acceleration for visual, perception-driven, and neural workloads."
+    - "Low-latency and energy-efficient systems and hardware for visual, perception-driven, and neural workloads."
     - "Sensor fusion and real-time 3D reconstruction from multimodal inputs."
-    - "Distributed, edge, and edge–cloud systems for scalable visual processing."
   important_dates:
     - "**Submission Deadline**: May 29, 2026 (Anywhere on Earth)"
     - "**Author Notification**: June 1, 2026"
