@@ -15,6 +15,17 @@ keynotes:
 
       Recent large multimodal models (LMMs) provide a new mechanism for monitoring immersive systems. By jointly reasoning over video streams captured by MR devices, rendered virtual content, spatial audio, and scene context, these models have the potential to identify misaligned overlays, unsafe occlusions, inconsistent audio-visual cues, and policy violations in MR applications. In this talk, I will present an LMM-based MR evaluation pipeline that uses LMMs together with auxiliary ML models to analyze continuous multimodal streams and trigger corrective actions when problematic virtual content is detected. A key challenge in LMM-based XR evaluation is reducing inference latency to support near real-time operation. I present a collection of system design choices and lay out a research agenda with the potential to bring down the cost and latency of these systems.
 
+  - id: 4
+    title: "Enabling Efficient 3D Gaussian Splatting on Edge GPUs and Specialized Accelerators"
+    speaker: "Yu Feng"
+    speaker_url: "https://yufenguofr.github.io/"
+    speaker_title: "Assistant Professor at the John Hopcroft Center for Computer Science, Shanghai Jiao Tong University"
+    photo: "https://raw.githubusercontent.com/SAI-Lab-NYU/VisArch_ISCA26/main/assets/images/keynotes/yu_feng.png"
+    bio: |-
+      Yu Feng is currently an Assistant Professor at the John Hopcroft Center for Computer Science, Shanghai Jiao Tong University. He received his Ph.D. in Computer Science from the University of Rochester in 2023. His research interests span computer architecture, edge AI inference acceleration, and edge-cloud collaborative computing. He has published more than 40 papers in top-tier computer architecture conferences, including ISCA, MICRO, ASPLOS, and HPCA. He is the recipient of multiple awards, including the IEEE VR 2022 Best Paper Honorable Mention, the ICCD 2024 Best Paper Nomination, the ASPLOS 2025 Best Paper Award, ASPLOS 2026 Best Paper Nomination, and ISCA Hall of Fame.
+    abstract: |-
+      With the rapid development of 3D Gaussian Splatting (3DGS) in virtual reality, spatial computing, and related fields, the demand for dedicated hardware support has been steadily increasing. As an emerging rendering technique, Gaussian splatting not only significantly improves rendering quality, but also demonstrates broad application potential in complex scenes. However, practical deployment of 3DGS still faces a series of challenges, including strong data dependencies, high computational intensity, and incompatibility with existing GPU architectures. This talk focuses on the rendering pipeline of 3DGS and the current bottlenecks in GPU architectures. It provides an in-depth analysis of the limitations across the algorithm, dataflow, and architecture layers, and proposes corresponding optimization strategies to promote 3DGS toward a more general-purpose and efficient rendering technology.
+
 # Add speaker photos under:
 #   assets/images/keynotes/
 #
