@@ -31,7 +31,7 @@ tabs:
 
   - title: "Invited Talk 4"
     keynote_id: 4
-    talk_title: "TBD"
+    talk_title: "Enabling Efficient 3D Gaussian Splatting on Edge GPUs and Specialized Accelerators"
     time: 11:15am - 12:00pm
     speaker: Yu Feng
     speaker_url: "https://yufenguofr.github.io/"
