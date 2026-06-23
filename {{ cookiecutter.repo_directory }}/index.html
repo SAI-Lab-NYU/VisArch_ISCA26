@@ -531,7 +531,7 @@
                             <div class="col-md-3 text-md-center mt-3 mt-md-0 keynote-photo-wrap">
                                 <img src="{{ keynote.photo }}"
                                      class="img-fluid keynote-photo"
-                                     alt="{{ keynote.speaker }}">
+                                     alt="{{ keynote.speaker|e }}">
                             </div>
                             {%- endif %}
                         </div>
