@@ -15,18 +15,22 @@ tabs:
     speaker_title: Duke University
 
   - title: "Invited Talk 2"
-    talk_title: "TBD"
+    keynote_id: 2
+    talk_title: "Architecting Live and Adaptable 3D Systems for Spatial Intelligence"
     time: 9:20am - 10:05am
     speaker: 'Yingyan "Celine" Lin'
+    speaker_url: "https://www.cc.gatech.edu/people/yingyan-celine-lin"
     speaker_title: Georgia Institute of Technology
 
   - title: "Poster Session & Coffee Break"
     time: 10:05am - 10:30am
 
   - title: "Invited Talk 3"
-    talk_title: "TBD"
+    keynote_id: 3
+    talk_title: "A Cross-Stack Optimization Pathway Toward Efficient Multimodal AI"
     time: 10:30am - 11:15am
     speaker: Hongxiang Fan
+    speaker_url: "https://os-hxfan.github.io/"
     speaker_title: Imperial College London
 
   - title: "Invited Talk 4"
